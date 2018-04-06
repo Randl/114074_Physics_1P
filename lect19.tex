@@ -1,0 +1,101 @@
+\paragraph{Potential energy}
+Around stable equilibrium points potential energy is approximately parabola $U = const \cdot (x-x_0)^2$
+\paragraph{Average energy}
+Average energy for non-damped is
+$$<E> = \frac{1}{t} \int_{t} E dt$$
+
+Lets calculate an average energy for full cycle T:
+$$x = A \sin \left( \omega_0 t + \phi \right)$$
+$$\dot{x} = A \omega_0 \cos \left( \omega_0 t + \phi \right)$$
+
+Kinetic energy is
+$$<K> = \frac{1}{T} \int_0^T \left( \frac{1}{2} m \dot{x}^2 \right) dt = \frac{1}{2T}m\omega^2 A^2 \int_0^T \cos^2 \left( \omega_0 t + \phi \right) dt$$
+
+Cycle time is $T=\frac{2\pi}{\omega_0}$. $A$ an $\phi$ are constant and depend on initial state. Also, an average of $\sin$ is equal to average of $\cos$ \textit{for full cycle}. Thus
+
+\begin{align*}
+\frac{1}{T}\int_0^T\cos^2  \left( \omega_0 t + \phi \right) dt  = \frac{1}{T}\int_0^T \sin^2  \left( \omega_0 t + \phi \right) dt =\\= \frac{1}{2T}\int_0^T \left[ \cos^2  \left( \omega_0 t + \phi \right) + \sin^2  \left( \omega_0 t + \phi \right) \right] dt = \frac{1}{2}
+\end{align*}
+
+By substituting in $<K>$:
+
+$$<K> = \frac{1}{4}m\omega_0^2A^2$$
+
+
+Now, for potential energy:
+
+$$<U> = \frac{1}{T} \int_0^T cx^2 dt = \frac{1}{T} \int^T_0 \frac{1}{2} cA^2 \sin^2 \left( \omega_0 t + \phi \right)  = \frac{1}{4}cA^2 = \frac{1}{4} m\omega_0^2A^2$$.
+
+We acquired
+
+$$<U> = <K>$$
+
+, which is called virial theorem.
+
+\paragraph{Damped oscillator}
+
+For damped oscillator average energy isn't constant.
+
+$$\left(\parbox{1cm}{\centering \scriptsize power of waste}\right) = - \frac{d}{dt} <E>$$
+
+If there are many (more than 3) oscillation in $\tau$, then
+
+$$-\frac{d}{dt} <E> = \frac{<E(t)>}{\tau}$$
+
+\paragraph{Quality factor Q}
+
+$$Q = \frac{\parbox{4cm}{\centering \scriptsize energy stored}}{\parbox{4cm}{\centering \scriptsize energy lost in one oscilation}} = \frac{2\pi E(t)}{\left(\frac{-d<E>}{dt}\right)T}$$
+ or
+ 
+ $$Q = \omega_0 \tau$$
+High $Q$ means high loss of energy. In time $\tau$ energy is decreases by factor $\frac{1}{e}$.
+
+\subsection{Driven oscillator}
+Driving force which depends on time:
+$$F(t) = F_0 \sin \omega_0 t$$
+
+There is also system (spring) with undamped frequency
+
+$$\omega_0  = \frac{c}{m}$$
+
+Also there is damping 
+$$\tau = \frac{m}{b}$$
+
+Also define
+
+$$\alpha = \frac{F_0}{m}$$
+
+The equation of motion is:
+
+$$m \ddot{x} = F(t) - b \dot{x} - Cx$$
+
+After $F$ starts to action system it goes through complex changes and stands on steady-state solution
+
+$$x = x_0 \sin \left( \omega t + \phi^\prime \right)$$
+
+Note: $x_0$ and $\phi$ depends on parameters of system and not on initial conditions which decay:
+
+$$\tan \phi^\prime = - \frac{\frac{\omega}{\tau}}{\omega_0^2 - \omega^2}$$
+$$x_0 = \frac{\frac{F_0}{m}}{\sqrt{\left(w_0^2-w^2\right) + \left(\frac{\omega}{\tau}\right)^2}}$$
+
+\paragraph{Phase}
+$\phi^\prime$ - what is phase difference between system's oscillation and driving force. Driving force is maximal in time $\omega t = \frac{\pi}{2}$. $x$ is maximal in $\omega t + \phi^\prime = \frac{\pi}{2}$ or $\omega t = \frac{\pi}{2} - \phi^\prime$
+\paragraph{Amplitude}
+$x_0$ is maximal for $\omega = \omega_0\sqrt{1 - \frac{1}{2Q^2}}$. If there is no damping, i.e. $Q \to \infty$, then for $\omega = \omega_0$ $x_0 \to \infty$.
+
+\paragraph{Examples}
+\begin{itemize}
+	\item $\omega \ll \omega_0$ then $\phi \to 0$:
+	
+	$$x_0 \to \frac{\alpha_0}{\omega_0^2} = \frac{m\alpha_0}{c}= \frac{F_0}{c}$$
+	
+	Spring is much more important for $x_0$ than mass
+	\item Resonance. $\omega = \omega_0$, i.e $\phi \to -\frac{\pi}{2}$
+	
+	$$x_0 = \frac{\alpha_0 \tau}{\omega_0} = \frac{F_0}{b}\frac{1}{\omega_0}$$
+	
+	If $b \to 0$ then $x_0 \to \infty$
+	\item $\omega \gg \omega_0$ then $\phi \to -\pi$
+	
+	$$x_0 \to \frac{\alpha_0}{\omega^2}= \frac{F_0}{m\omega^2}$$
+	\end{itemize}

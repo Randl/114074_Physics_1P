@@ -1,0 +1,96 @@
+\paragraph{Time dilatation}
+
+Proper time $\tau$ - is time measured in same place (with same clock), i.e $\Delta x$ (and of course $\Delta y$, $\Delta z$) is 0. By substituting in Lorentz transformation:
+
+$$t_2^\prime = \gamma \left( t_2 - \frac{v}{c^2}x_2 \right)$$
+$$t_1^\prime = \gamma \left( t_1 - \frac{v}{c^2}x_1 \right)$$
+$$\Delta t^\prime \stackrel{=}{x_2=x_1} \gamma \left( t_2-t_1 \right)$$
+
+Or simply 
+$$\Delta t^\prime = \frac{\Delta \tau}{\sqrt{1-\frac{v^2}{c^2}}}$$
+	
+\paragraph{Example} Muon decay
+
+$$\mu^-  \to e^- + \bar{v}_e + v_\mu$$
+$$\mu^+  \to e^+ + v_e + \bar{v}_\mu$$
+
+In cosmic radiation in is created at hight of ~6km and lives for around $2\times 10^{-6}s$
+\paragraph{Example} Neutron
+
+$$n \to p + e^- + \bar{v}_e$$ 
+
+Half life of neutron is $t_{\frac{1}{2}}  =10.6s$ Distance from Earth to Pluto $L_0 = 330 (c \cdot 60s) = 5.94 \times 10^{12} m$.
+
+ Say we accelerate neutron to velocity of $v = \frac{220}{221}c$ on Earth to the Pluto's direction. Which part of neutrons will get to the Pluto?
+ 
+ \subparagraph{Answer}
+ 
+ The distance that neutron passes $L_0 = 330 c \cdot min$. The time required to pass this distance $t_0 = \frac{L_0}{v} = \frac{330 \cdot 221}{220v} = 331.5 min$. But neutrons decay according to proper time.
+ 
+ $$\tau = t_{Earth} \sqrt{1 - \frac{v^2}{c^2}} = \left(331.5 min \right) \sqrt{1 - \left( \frac{220}{221}  \right)^2}  =331.5 \frac{21}{221} = 31.5 min$$
+ 
+ $$N = N_0 2 ^ {-\frac{31.5}{10.6}} \approx N_0 2^{-3} = \frac{N_0}{8}$$ 
+ 
+ Now when neutron measures distance from Earth to Pluto (which are moving relative to him):
+ 
+ $$L  =\frac{L_0}{\gamma} = L_0 \sqrt{1 - \frac{v^2}{c^2}} = \left(330 c \cdot min \right) \frac{21}{221}$$
+ 
+ Time which will take to pass this distance is
+ 
+ $$t = \frac{L}{v} = \frac{330 \times \frac{21}{221}}{\frac{220}{221}c} = 31.5 min$$
+ 
+ \subsection{Lorentz transformation for velocity}
+ 
+ Particle moves with velocity $u$ in frame of reference $S$. Lets derive $x^\prime$ by $t$:
+ 
+ $$\frac{dx^\prime}{dt} = \frac{d}{dt} \left[ \gamma \left( x - vt \right) \right] = \gamma \frac{dx}{dt} - \gamma v = \gamma u_x - \gamma v$$
+ 
+ If $u_x$ is negative then the number is greater than $c$, but this is \textbf{not} velocity.
+ 
+ And time's derivative is:
+ 
+ $$\frac{dt^\prime}{dt} = \frac{d}{dt} \left[ \gamma \left( t - \frac{v}{c^2}x \right) \right] = \gamma - \gamma \frac{v}{c^2}u_x$$
+ 
+ Now we can calculate velocity:
+ 
+ $$u_x^\prime = \frac{dx^\prime}{dt^\prime} = \frac{dx^\prime}{dt^\prime}\frac{dt}{dt} = \frac{\gamma u_x - \gamma v}{\gamma  \left(1- \frac{v}{c^2}u_x\right)} = \frac{ u_x - v}{1- \frac{v}{c^2}u_x}$$
+ 
+ $$u_y^\prime = \frac{dy^\prime}{dt^\prime} = \frac{dy^\prime}{dt^\prime}\frac{dt}{dt} = \frac{u_y}{\gamma  \left(1- \frac{v}{c^2}u_x\right)}$$
+ 
+ 
+ $$u_z^\prime = \frac{dz^\prime}{dt^\prime} = \frac{dz^\prime}{dt^\prime}\frac{dt}{dt} = \frac{u_z}{\gamma  \left(1- \frac{v}{c^2}u_x\right)}$$
+ 
+ 
+ Inverse transformation: replace $-$ with $+$. 
+ \paragraph{Example} $u_y = c$ Then $u_x^\prime = -v$ and $u_y = \sqrt{1-\frac{v^2}{c^2}}c$ and $\left| u^\prime \right| = \sqrt{\left(-v\right)^2 + 1 - v^2} = c$.
+ 
+ \paragraph{Velocity addition} Two particle move with two different velocities in opposite directions $u_1$, $u_2$ in direction $x$ in frame of reference $S$. Say $S^\prime$ is frame of reference of first particle. Then $v=u_1$. Substitute it and get:
+ 
+ $$u_{2}^\prime = \frac{-u_2-u_1}{1 + \frac{u_1u_2}{c^2}}=- \frac{u_1+u_2}{1+ \frac{u_1u_2}{c^2}}$$
+ 
+ This is velocity addition rule.
+ 
+ \subparagraph{Example} $u_1=0.8c$ and $u_2=0.9c$, then relative velocity will be  $u_1^\prime = \frac{0.8c+0.9c}{1+ \frac{0.8\cdot0.9c^2}{c^2}} = \frac{1.7}{1.72}c < c$
+ 
+ 
+ \subsection{Doppler effect}
+ 
+ Is the change in frequency of a wave for an observer moving relative to its source. If a wave moves in medium it's important who is moving and who isn't. For light in vacuum it's not important.
+ 
+ Frame of reference $S$ sends two pulses to frame $S^\prime$. At $t=0$ both are situated in $x=0$ and $x^\prime=0$ and a pulse is sent and received immediately.
+ 
+ Now let's calculate when a second pulse, sent at $t=\tau$ is received.
+ 
+ $$x^\prime = \frac{x-vt}{\sqrt{1-\frac{v^2}{c^2}}} =-\gamma v \tau$$
+ $$t^\prime = \frac{1 - \frac{v}{c^2}x}{\sqrt{1-\frac{v^2}{c^2}}} = \gamma \tau$$
+ 
+ Now the time that takes the signal to get to the receiver is
+ 
+ $$\Delta t^\prime=\frac{x^\prime}{c} = \frac{\gamma v \tau}{c}$$
+ 
+ Then total time is
+ 
+ $$\tau^\prime = t^\prime + \Delta t^\prime = \gamma \tau \left( 1  +\frac{v}{c}\right) =
+  \tau \sqrt{\frac{1+\frac{v}{c}}{1-\frac{v}{c}}}$$
+  
+  We can see that as sender is moving from receiver, then a frequency of receiving signal is decreased, and if it's moving toward, frequency is increased:

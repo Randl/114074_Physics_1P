@@ -1,0 +1,64 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'pic4.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{801.21118164bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.768836)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{pic4.pdf}}%
+    \put(0.40059661,0.13181768){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{base}}}%
+    \put(0.06895995,0.31225404){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{\textbf{a}}}}%
+    \put(0.30706923,0.03066363){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{b}}}}%
+    \put(0.10122533,0.10192385){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{\textbf{c}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{pic4.pdf}}%
+    \put(0.12118874,0.02682618){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{\textsl{θ}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{pic4.pdf}}%
+    \put(0.19903157,0.31790509){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{\textsl{h}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{pic4.pdf}}%
+    \put(0.15009848,0.37972452){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{\textsl{α}}}}%
+  \end{picture}%
+\endgroup%

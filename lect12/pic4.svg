@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Originally created with Inkscape (http://www.inkscape.org/), recreated by hand -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="700" height="400">
+  <style type="text/css" >
+    <![CDATA[
+      text {
+         font-family:sans-serif;
+         font-size:60px;
+      }
+      path, circle {
+         fill:none;
+         stroke:#000000;
+         stroke-width:5px;
+      }
+    ]]>
+  </style>
+  <defs>
+    <path id="arrow" d="m 25,-20 -50,20 50,20 z" style="fill:#000000" />
+  </defs>
+  <circle cx="565" cy="200" r="70" style="fill:#ff0000" />
+  <path d="M 35,100 h 530 a 100,100,0,0,1,0,200 h -530" />
+  <use xlink:href="#arrow" x="-350" y="-100" transform="scale(-1)" />
+  <use xlink:href="#arrow" x="350" y="300" />
+  <use xlink:href="#arrow" x="375" y="200" />
+  <path d="M 400,200 h 75" />
+  <text x="350" y="70" text-anchor="middle">v</text>
+  <text x="437.5" y="185" text-anchor="middle">U</text>
+  <text x="350" y="370" text-anchor="middle">2U + v</text>
+</svg>
